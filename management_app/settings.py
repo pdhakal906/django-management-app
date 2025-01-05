@@ -125,8 +125,8 @@ USE_TZ = True
 
 # remove entirely for local
 
-STATIC_URL = "/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATIC_URL = "/staticfiles/"
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 # This production code might break development mode, so we check whether we're in DEBUG mode
 if (
     not DEBUG
