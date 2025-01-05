@@ -124,8 +124,8 @@ USE_TZ = True
 
 # remove entirely for local
 
-
 STATIC_URL = "/static/"
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 # This production code might break development mode, so we check whether we're in DEBUG mode
 if (
     not DEBUG
@@ -137,4 +137,4 @@ if (
 
 MEDIA_URL = "/images/"
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
